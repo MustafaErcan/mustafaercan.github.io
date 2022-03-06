@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Commander Keen</title>
+        <script src="trivia.js"></script>
+    </head>
+    <body style="background-color: #3E4742;">
+
+        <div class="header">
+            <img class="header_img" src="keen_header.jpg";>
+            <p><b>Commander<br>Keen</b></p>
+        </div>
+
+        <div class="container-fluid"></div>
+            <ul class="nav nav-pills justify-content-center gap-2">
+                <li class="nav-item">
+                    <a class="nav-link badge fs-3 fw-bold bg-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link badge fs-3 fw-bold bg-dark" href="games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link badge fs-3 fw-bold bg-dark" href="gameplay.html">Gameplay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link badge fs-3 fw-bold bg-dark" href="trivia.html">Trivia</a>
+                </li>
+            </ul>            
+        </div>
+
+
+        <div class="text_box">    
+            <h3 class="p3">Multiple Choice </h3>
+            <hr>
+                <div>
+                    <h4 class="p3">What is the release year of the first Commander Keen game?</h4>
+    
+                    <button class="incorrect" onclick="check_multp_answer(event)">1992</button>
+                    <button class="incorrect" onclick="check_multp_answer(event)">1991</button>
+                    <button class="correct" onclick="check_multp_answer(event)">1990</button>
+                    <button class="incorrect" onclick="check_multp_answer(event)">1989</button>
+                    <p class="p3" id="result"></p>
+                </div>
+    
+                <div>
+                    <h4 class="p3">What platform was the last game relased for?</h4>
+                    <button class="incorrect" onclick="check_multp_answer(event)">MS Dos</button>
+                    <button class="incorrect" onclick="check_multp_answer(event)">Windows</button>
+                    <button class="incorrect" onclick="check_multp_answer(event)">Nintendo Gamecube</button>
+                    <button class="correct" onclick="check_multp_answer(event)">Gameboy Color</button>
+    
+                    <p class="p3" id="result"></p>
+                </div>
+                    
+    
+        </div>
+    
+        <div class="text_box">        
+            <h3 class="p3">Free Response</h3>
+            <hr>
+
+                <h4 class="p3">What is the name of the monster fish in Commander Keen games?</h4>
+                <input type="text" id="free_answer">
+                <input type="submit" id="free_button" value="Submit">
+    
+                <p id="result"></p>            
+
+        </div>
+
+    </body>
+
+
+</html>
